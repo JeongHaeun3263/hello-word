@@ -1,38 +1,240 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+	--primary: #003566;
+	--secondary: #ffc300;
+	--white: #fff;
+  --black: #000814;
+  --grey: #e5e5e5
+	--red: #e63946;
+  font-size: 62.5%;
+  --text-size-base: 2.5rem;
+  --text-size-xxl: 4.8rem;
+  --text-size-xl: 4rem;
+  --text-size-l: 3rem;
+  --text-size-s: 2rem;
+  --text-size-xs: 1.6rem;
+  --text-size-xxs: 1.2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+	padding: 2rem;
+	margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.btns {
+  padding: 2rem 0;
+}
+
+.btn {
+	padding: 10px 15px;
+	background-color: var(--secondary);
+	color: var(--primary);
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: inline-block;
+	border: none;
+	font-size: var(--text-size-s);
+	transition: all 0.3s ease;
+	line-height: 1.1;
+}
+
+.btn:hover {
+	background-color: #ffd60a;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.btn:disabled {
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+
+input:focus {
+	outline: none;
+}
+
+/* Header Styles */
+header {
+	background-color: var(--primary);
+}
+
+header .inner-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+}
+
+header a {
+	color: var(--white);
+	font-size: var(--text-size-base);
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+header a:hover {
+	opacity: 0.7;
+}
+
+header .brand a {
+	font-weight: 700;
+	font-size: var(--text-size-l);
+}
+
+header .nav-links {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+header .nav-links li {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+header .nav-links li:last-child {
+	margin-right: 0;
+}
+
+/* Add Page */
+.add-content {
+	padding: 50px 0;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.add-content .input-wrapper input {
+	width: 100%;
+	background-color: var(--primary);
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	color: var(--white);
+	font-size: var(--text-size-base);
+}
+
+.results {
+	padding: 0;
+	margin: 0;
+	margin-top: 20px;
+}
+
+.results li {
+	list-style: none;
+}
+
+/* Result Card */
+.result-card .title {
+	font-size: var(--text-size-xl);
+}
+.result-card .definitions-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	font-size: var(--text-size-base);
+}
+
+/* Word Page */
+.word-page {
+	padding: 30px 0;
+}
+
+.word-page .header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.count-pill {
+	display: block;
+	background-color: var(--secondary);
+	padding: 5px 15px;
+	font-size: 1.125rem;
+	font-weight: 600;
+	border-radius: 999px;
+	color: var(--primary);
+}
+
+.word-page .heading {
+	color: var(--primary);
+	font-size: var(--text-size-l);
+	margin: 0;
+}
+
+.word-list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.word-card {
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+		rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.word-card__header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.word-card .title {
+	font-size: var(--text-size-l);
+}
+
+.word-card .audio {
+	font-size: var(--text-size-base);
+	color: var(--grey);
+}
+
+
+
+.word-card .definitions {
+  font-size: var(--text-size-base);
+}
+
+.word-page .no-words {
+	color: #c4c4c4;
+	font-size: var(--text-size-l);
+	text-align: center;
 }
