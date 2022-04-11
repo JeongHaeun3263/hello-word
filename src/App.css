@@ -4,21 +4,22 @@
 	--primary: #003566;
 	--secondary: #ffc300;
 	--white: #fff;
-  --black: #000814;
-  --grey: #e5e5e5
+	--black: #000814;
+	--grey: #e5e5e5
 	--red: #e63946;
-  font-size: 62.5%;
-  --text-size-base: 2.5rem;
-  --text-size-xxl: 4.8rem;
-  --text-size-xl: 4rem;
-  --text-size-l: 3rem;
-  --text-size-s: 2rem;
-  --text-size-xs: 1.6rem;
-  --text-size-xxs: 1.2rem;
+	font-size: 62.5%;
+	--text-size-base: 2.5rem;
+	--text-size-xxl: 4.8rem;
+	--text-size-xl: 4rem;
+	--text-size-l: 3rem;
+	--text-size-s: 2rem;
+	--text-size-xs: 1.6rem;
+	--text-size-xxs: 1.2rem;
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
+	color: #333;
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -237,4 +238,10 @@ header .nav-links li:last-child {
 	color: #c4c4c4;
 	font-size: var(--text-size-l);
 	text-align: center;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	font-size: var(--text-size-xs);
 }

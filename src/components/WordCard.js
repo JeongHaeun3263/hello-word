@@ -23,8 +23,8 @@ const WordCard = ({ word }) => {
 			<details className='definitions'>
 				<summary>click to see definitions</summary>
 				<ul>
-					{definitions[0].map((definition) => (
-						<li>{definition.definition}</li>
+					{definitions[0].map((definition, i) => (
+						<li key={i}>{definition.definition}</li>
 					))}
 				</ul>
 			</details>

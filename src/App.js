@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Test from './components/Test';
 import WordList from './components/WordList';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 					<Route path='/test' element={<Test />} />
 					<Route path='/add' element={<Add />} />
 				</Routes>
+				<Footer />
 			</Router>
 		</GlobalContextProvider>
 	);
