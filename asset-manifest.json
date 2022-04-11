@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hello-word/static/css/main.6938ed30.css",
+    "main.js": "/hello-word/static/js/main.147d0683.js",
+    "index.html": "/hello-word/index.html",
+    "main.6938ed30.css.map": "/hello-word/static/css/main.6938ed30.css.map",
+    "main.147d0683.js.map": "/hello-word/static/js/main.147d0683.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6938ed30.css",
+    "static/js/main.147d0683.js"
+  ]
+}
