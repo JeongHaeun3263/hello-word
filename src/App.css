@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 :root {
+	/* Color */
 	--primary: #003566;
 	--secondary: #ffc300;
 	--white: #fff;
 	--black: #000814;
-	--grey: #e5e5e5
+	--grey: #e5e5e5;
 	--red: #e63946;
-	font-size: 62.5%;
+
+	/* Font Size */
 	--text-size-base: 2.5rem;
 	--text-size-xxl: 4.8rem;
 	--text-size-xl: 4rem;
@@ -15,14 +17,15 @@
 	--text-size-s: 2rem;
 	--text-size-xs: 1.6rem;
 	--text-size-xxs: 1.2rem;
+
+	font-size: 62.5%;
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
 	color: #333;
-	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
+	padding: 0;
 }
 
 .container {
@@ -55,7 +58,7 @@ body {
 }
 
 .btns {
-  padding: 2rem 0;
+	padding: 2rem 0;
 }
 
 .btn {
@@ -82,7 +85,6 @@ body {
 	pointer-events: none;
 	opacity: 0.5;
 }
-
 
 input:focus {
 	outline: none;
@@ -228,10 +230,8 @@ header .nav-links li:last-child {
 	color: var(--grey);
 }
 
-
-
 .word-card .definitions {
-  font-size: var(--text-size-base);
+	font-size: var(--text-size-base);
 }
 
 .word-page .no-words {
