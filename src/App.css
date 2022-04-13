@@ -57,35 +57,6 @@ body {
 	box-sizing: border-box;
 }
 
-.btns {
-	padding: 2rem 0;
-}
-
-.btn {
-	padding: 10px 15px;
-	background-color: var(--secondary);
-	color: var(--primary);
-	border-radius: 5px;
-	text-transform: uppercase;
-	font-weight: 700;
-	display: inline-block;
-	border: none;
-	font-size: var(--text-size-s);
-	transition: all 0.3s ease;
-	line-height: 1.1;
-	cursor: pointer;
-}
-
-.btn.danger {
-	background-color: var(--red);
-	color: var(--white);
-}
-
-.btn:disabled {
-	pointer-events: none;
-	opacity: 0.5;
-}
-
 input:focus {
 	outline: none;
 }
@@ -162,18 +133,6 @@ header .nav-links li:last-child {
 	list-style: none;
 }
 
-/* Result Card */
-.result-card .title {
-	font-size: var(--text-size-xl);
-}
-.result-card .definitions-list {
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
-	font-size: var(--text-size-base);
-}
-
 /* Word Page */
 .word-page {
 	padding: 30px 0;
@@ -225,7 +184,7 @@ header .nav-links li:last-child {
 	font-size: var(--text-size-l);
 }
 
-.word-card .audio {
+.audio {
 	font-size: var(--text-size-base);
 	color: #777;
 }

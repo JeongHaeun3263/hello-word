@@ -2,10 +2,9 @@ import React, { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalContext';
 import { FaVolumeUp } from 'react-icons/fa';
 import Button from './button/Button';
+import WordItem from './word-item/WordItem';
 
 const WordCard = ({ word }) => {
-	const definitions = word.meanings.map((item) => item.definitions);
-
 	const { dispatch } = useContext(GlobalContext);
 
 	const playAudio = () => {
@@ -23,11 +22,7 @@ const WordCard = ({ word }) => {
 			</div>
 			<details className='definitions'>
 				<summary>click to see definitions</summary>
-				<ul>
-					{definitions[0].map((definition, i) => (
-						<li key={i}>{definition.definition}</li>
-					))}
-				</ul>
+				<WordItem word={word} />
 			</details>
 			<div className='btns'>
 				<Button

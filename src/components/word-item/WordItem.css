@@ -1,0 +1,14 @@
+.word-item .form {
+	font-size: var(--text-size-base);
+}
+.word-item .definitions {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	font-size: var(--text-size-s);
+}
+
+.word-item .definitions:last-child {
+	margin-bottom: 2rem;
+}

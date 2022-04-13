@@ -1,0 +1,9 @@
+.result-card .title {
+	font-size: var(--text-size-xl);
+	display: inline-block;
+	margin-right: 2rem;
+}
+
+.result-card .form {
+	font-size: var(--text-size-base);
+}
