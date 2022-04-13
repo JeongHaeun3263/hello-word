@@ -73,12 +73,12 @@ body {
 	font-size: var(--text-size-s);
 	transition: all 0.3s ease;
 	line-height: 1.1;
+	cursor: pointer;
 }
 
-.btn:hover {
-	background-color: #ffd60a;
-	opacity: 1;
-	cursor: pointer;
+.btn.danger {
+	background-color: var(--red);
+	color: var(--white);
 }
 
 .btn:disabled {
@@ -227,7 +227,7 @@ header .nav-links li:last-child {
 
 .word-card .audio {
 	font-size: var(--text-size-base);
-	color: var(--grey);
+	color: #777;
 }
 
 .word-card .definitions {

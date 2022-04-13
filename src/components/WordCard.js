@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalContext';
 import { FaVolumeUp } from 'react-icons/fa';
+import Button from './button/Button';
 
 const WordCard = ({ word }) => {
 	const definitions = word.meanings.map((item) => item.definitions);
@@ -29,8 +30,8 @@ const WordCard = ({ word }) => {
 				</ul>
 			</details>
 			<div className='btns'>
-				<button
-					className='btn'
+				<Button
+					className='danger'
 					onClick={() =>
 						dispatch({
 							type: 'REMOVE_WORD_FROM_WORDLIST',
@@ -39,7 +40,7 @@ const WordCard = ({ word }) => {
 					}
 				>
 					delete
-				</button>
+				</Button>
 			</div>
 		</div>
 	);
