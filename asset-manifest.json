@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/hello-word/static/css/main.0a782f9f.css",
-    "main.js": "/hello-word/static/js/main.adc4c510.js",
+    "main.js": "/hello-word/static/js/main.21dfda75.js",
     "index.html": "/hello-word/index.html",
     "main.0a782f9f.css.map": "/hello-word/static/css/main.0a782f9f.css.map",
-    "main.adc4c510.js.map": "/hello-word/static/js/main.adc4c510.js.map"
+    "main.21dfda75.js.map": "/hello-word/static/js/main.21dfda75.js.map"
   },
   "entrypoints": [
     "static/css/main.0a782f9f.css",
-    "static/js/main.adc4c510.js"
+    "static/js/main.21dfda75.js"
   ]
 }
