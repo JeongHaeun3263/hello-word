@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
-import { GlobalContext } from '../context/GlobalContext';
-import WordCard from './WordCard';
+import { GlobalContext } from '../../context/GlobalContext';
+import WordCard from '../../components/word-card/WordCard';
+import './WordList.css';
 
 const WordList = () => {
 	const { wordlist } = useContext(GlobalContext);

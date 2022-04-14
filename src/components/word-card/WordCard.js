@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
-import { GlobalContext } from '../context/GlobalContext';
+import { GlobalContext } from '../../context/GlobalContext';
 import { FaVolumeUp } from 'react-icons/fa';
-import Button from './button/Button';
-import WordItem from './word-item/WordItem';
+import Button from '../button/Button';
+import WordItem from '../word-item/WordItem';
+import './WordCard.css';
 
 const WordCard = ({ word }) => {
 	const { dispatch } = useContext(GlobalContext);

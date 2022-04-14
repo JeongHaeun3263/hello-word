@@ -1,11 +1,12 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import GlobalContextProvider from './context/GlobalContext';
-import Add from './components/Add';
-import Header from './components/Header';
-import Test from './components/Test';
-import WordList from './components/WordList';
+import Add from './pages/add/Add';
+import Header from './components/header/Header';
+import Test from './pages/test/Test';
+import WordList from './pages/word-list/WordList';
 import './App.css';
-import Footer from './components/Footer';
+import Footer from './components/footer/Footer';
 
 function App() {
 	return (

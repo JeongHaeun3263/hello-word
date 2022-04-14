@@ -1,6 +1,7 @@
-import axios from 'axios';
 import React, { useState } from 'react';
-import ResultCard from './result-card/ResultCard';
+import ResultCard from '../../components/result-card/ResultCard';
+import axios from 'axios';
+import './Add.css';
 
 const Add = () => {
 	const [query, setQuery] = useState('');

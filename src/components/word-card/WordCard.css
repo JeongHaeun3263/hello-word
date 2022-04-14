@@ -1,0 +1,31 @@
+.word-card {
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+		rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.word-card__header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.word-card .title {
+	font-size: var(--text-size-l);
+}
+
+.audio {
+	font-size: var(--text-size-base);
+	color: #777;
+}
+
+.word-card .definitions {
+	font-size: var(--text-size-base);
+}
+
+.word-page .no-words {
+	color: #c4c4c4;
+	font-size: var(--text-size-l);
+	text-align: center;
+}
