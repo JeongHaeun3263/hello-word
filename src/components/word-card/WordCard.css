@@ -29,3 +29,8 @@
 	font-size: var(--text-size-l);
 	text-align: center;
 }
+
+.btns {
+	display: flex;
+	gap: 20px;
+}
