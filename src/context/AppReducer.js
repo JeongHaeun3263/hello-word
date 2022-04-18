@@ -10,6 +10,12 @@ export const AppReducer = (state, action) => {
 				...state,
 				wordlist: state.wordlist.filter((word) => word.id !== action.id),
 			};
+		// case 'ADD_NOTE_TO_WORDITEM':
+		// 	return {
+		// 		...state,
+		// 		wordlist: [...state.wordlist, [word.id]]
+		// 	};
+
 		default:
 			return state;
 	}

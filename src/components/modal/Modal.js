@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
-import Button from '../button/Button';
+import { FaTimes } from 'react-icons/fa';
 import './Modal.css';
 
 const Modal = ({ children, onClick }) => {
@@ -9,10 +9,9 @@ const Modal = ({ children, onClick }) => {
 		<div className='modal-backdrop'>
 			<div className='modal'>
 				{children}
-				<div className='btns'>
-					<Button onClick={onClick} btnName='Cancel' />
-					<Button onClick={onClick} btnName='Add' />
-				</div>
+				<span className='close'>
+					<FaTimes onClick={onClick} />
+				</span>
 			</div>
 		</div>,
 		node

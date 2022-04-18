@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import { GlobalContext } from '../../context/GlobalContext';
 import { v4 as uuidv4 } from 'uuid';
 import { FaVolumeUp } from 'react-icons/fa';
-import './ResultCard.css';
 import WordItem from '../word-item/WordItem';
+import './ResultCard.css';
 
 const ResultCard = ({ word }) => {
 	const { wordlist, dispatch } = useContext(GlobalContext);
@@ -24,11 +24,12 @@ const ResultCard = ({ word }) => {
 					<FaVolumeUp />
 				</span>
 			</div>
+
 			<button
 				onClick={() =>
 					dispatch({
 						type: 'ADD_WORD_TO_WORDLIST',
-						word: { ...word, id: uuidv4() },
+						word: { ...word, id: uuidv4(), note: '' },
 					})
 				}
 				disabled={saveButtonDisabled}
